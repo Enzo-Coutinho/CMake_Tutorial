@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step1/build/CMakeFiles /home/enzoc/CMake_Exercises/Step1/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step1/build/CMakeFiles /home/enzoc/CMake_Exercises/Step1/build/MathFunctions//CMakeFiles/progress.marks
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MathFunctions
+# Convenience name for target.
+MathFunctions/CMakeFiles/MathFunctions.dir/rule:
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/rule
+.PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
 
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions
+# Convenience name for target.
+MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 .PHONY : MathFunctions
 
 # fast build rule for target.
 MathFunctions/fast:
-	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
 
-#=============================================================================
-# Target rules for targets named Tutorial
+MathFunctions.o: MathFunctions.cxx.o
+.PHONY : MathFunctions.o
 
-# Build rule for target.
-Tutorial: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tutorial
-.PHONY : Tutorial
+# target to build an object file
+MathFunctions.cxx.o:
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.o
+.PHONY : MathFunctions.cxx.o
 
-# fast build rule for target.
-Tutorial/fast:
-	$(MAKE) $(MAKESILENT) -f Tutorial/CMakeFiles/Tutorial.dir/build.make Tutorial/CMakeFiles/Tutorial.dir/build
-.PHONY : Tutorial/fast
+MathFunctions.i: MathFunctions.cxx.i
+.PHONY : MathFunctions.i
+
+# target to preprocess a source file
+MathFunctions.cxx.i:
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.i
+.PHONY : MathFunctions.cxx.i
+
+MathFunctions.s: MathFunctions.cxx.s
+.PHONY : MathFunctions.s
+
+# target to generate assembly for a file
+MathFunctions.cxx.s:
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.s
+.PHONY : MathFunctions.cxx.s
 
 # Help Target
 help:
@@ -151,7 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MathFunctions"
-	@echo "... Tutorial"
+	@echo "... MathFunctions.o"
+	@echo "... MathFunctions.i"
+	@echo "... MathFunctions.s"
 .PHONY : help
 
 
@@ -163,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/enzoc/CMake_Exercises/Step1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

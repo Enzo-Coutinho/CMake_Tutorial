@@ -1,4 +1,4 @@
-CMakeFiles/MathFunctions.dir/MathFunctions/MathFunctions.cxx.o: \
+MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.o: \
  /home/enzoc/CMake_Exercises/Step1/MathFunctions/MathFunctions.cxx \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
