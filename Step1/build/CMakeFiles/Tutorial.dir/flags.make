@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/enzoc/CMake_Exercises/Step1/MathFunctions
 
 CXX_FLAGS = 
 

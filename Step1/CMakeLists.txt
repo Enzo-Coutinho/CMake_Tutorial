@@ -26,13 +26,10 @@ target_sources(MathFunctions
                     FILES
                         MathFunctions/MathFunctions.h)
 
+target_link_libraries(Tutorial 
+                        PRIVATE
+                            MathFunctions)
+
 # TODO11: Add the Tutorial subdirectory to the project
-
-# TODO5: Add a library target called MathFunctions to the project
-
-# TODO6: Add the source and header file located in Step1/MathFunctions to the
-#        MathFunctions target, note that the intended way to include the
-#        MathFunctions header is:
-#          #include <MathFunctions.h>
 
 # TODO13: Add the MathFunctions subdirectory to the project
