@@ -14,6 +14,17 @@ target_sources(Tutorial
 
 # TODO7: Add the MathFunctions library as a linked dependency
 #        to the Tutorial target
+add_library(MathFunctions)
+
+target_sources(MathFunctions
+                PRIVATE 
+                    MathFunctions/MathFunctions.cxx
+                PUBLIC 
+                    FILE_SET HEADERS
+                    BASE_DIRS 
+                        MathFunctions
+                    FILES
+                        MathFunctions/MathFunctions.h)
 
 # TODO11: Add the Tutorial subdirectory to the project
 
