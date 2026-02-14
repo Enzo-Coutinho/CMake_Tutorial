@@ -167,4 +167,5 @@ Tutorial/CMakeFiles/Tutorial.dir/Tutorial.cxx.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/enzoc/CMake_Exercises/Step4/MathFunctions/MathFunctions.h
+ /home/enzoc/CMake_Exercises/Step4/MathFunctions/MathFunctions.h \
+ /home/enzoc/CMake_Exercises/Step4/Vendor/include/Vendor.h

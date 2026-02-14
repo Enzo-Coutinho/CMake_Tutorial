@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Tutorial.dir/Tutorial.cxx.o -o Tutorial  ../MathFunctions/libMathFunctions.a 
+/usr/bin/c++ CMakeFiles/Tutorial.dir/Tutorial.cxx.o -o Tutorial   -L/home/enzoc/CMake_Exercises/Step4/Vendor/lib  -Wl,-rpath,/home/enzoc/CMake_Exercises/Step4/Vendor/lib ../MathFunctions/libMathFunctions.a -lVendor 
