@@ -1,0 +1,10 @@
+/home/enzoc/CMake_Exercises/Step4/build/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/CMakeFiles/rebuild_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/Tutorial/CMakeFiles/Tutorial.dir
+/home/enzoc/CMake_Exercises/Step4/build/Tutorial/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/Tutorial/CMakeFiles/rebuild_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/enzoc/CMake_Exercises/Step4/build/MathFunctions/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/Vendor/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step4/build/Vendor/CMakeFiles/rebuild_cache.dir
