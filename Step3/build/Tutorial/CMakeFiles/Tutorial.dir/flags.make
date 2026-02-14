@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/enzoc/CMake_Exercises/Step3/MathFunctions
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++20
 

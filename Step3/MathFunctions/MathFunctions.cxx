@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <format>
 // TODO6: Include <format>
 
 namespace {
@@ -20,8 +20,7 @@ double mysqrt(double x)
     double delta = x - (result * result);
     result = result + 0.5 * delta / result;
 
-    // TODO7: Convert the print to use std::format
-    std::cout << "Computing sqrt of " << x << " to be " << result << std::endl;
+    std::cout << std::format("Computing sqrt of {} to be {}", x, result) << std::endl;
   }
   return result;
 }
