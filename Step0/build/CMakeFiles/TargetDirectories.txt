@@ -1,0 +1,3 @@
+/home/enzoc/CMake_Exercises/Step0/build/CMakeFiles/hello.dir
+/home/enzoc/CMake_Exercises/Step0/build/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step0/build/CMakeFiles/rebuild_cache.dir
