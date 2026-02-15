@@ -92,7 +92,7 @@ Tutorial_EXTERNAL_OBJECTS =
 
 Tutorial/Tutorial: Tutorial/CMakeFiles/Tutorial.dir/Tutorial.cxx.o
 Tutorial/Tutorial: Tutorial/CMakeFiles/Tutorial.dir/build.make
-Tutorial/Tutorial: MathFunctions/libMathFunctions.so
+Tutorial/Tutorial: MathFunctions/libMathFunctions.a
 Tutorial/Tutorial: Tutorial/CMakeFiles/Tutorial.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Tutorial"
 	cd /home/enzoc/CMake_Exercises/Step5/build/Tutorial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tutorial.dir/link.txt --verbose=$(VERBOSE)

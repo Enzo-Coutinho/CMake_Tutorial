@@ -6,3 +6,5 @@
 /home/enzoc/CMake_Exercises/Step5/build/MathFunctions/CMakeFiles/MathFunctions.dir
 /home/enzoc/CMake_Exercises/Step5/build/MathFunctions/CMakeFiles/edit_cache.dir
 /home/enzoc/CMake_Exercises/Step5/build/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathLogger/CMakeFiles/edit_cache.dir
+/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathLogger/CMakeFiles/rebuild_cache.dir

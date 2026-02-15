@@ -82,15 +82,32 @@ clean: MathFunctions/clean
 
 # Recursive "all" directory target.
 MathFunctions/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+MathFunctions/all: MathFunctions/MathLogger/all
 .PHONY : MathFunctions/all
 
 # Recursive "preinstall" directory target.
-MathFunctions/preinstall:
+MathFunctions/preinstall: MathFunctions/MathLogger/preinstall
 .PHONY : MathFunctions/preinstall
 
 # Recursive "clean" directory target.
 MathFunctions/clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
+MathFunctions/clean: MathFunctions/MathLogger/clean
 .PHONY : MathFunctions/clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions/MathLogger
+
+# Recursive "all" directory target.
+MathFunctions/MathLogger/all:
+.PHONY : MathFunctions/MathLogger/all
+
+# Recursive "preinstall" directory target.
+MathFunctions/MathLogger/preinstall:
+.PHONY : MathFunctions/MathLogger/preinstall
+
+# Recursive "clean" directory target.
+MathFunctions/MathLogger/clean:
+.PHONY : MathFunctions/MathLogger/clean
 
 #=============================================================================
 # Directory level rules for directory Tutorial
