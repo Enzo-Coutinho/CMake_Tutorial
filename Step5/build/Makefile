@@ -142,6 +142,45 @@ MathFunctions/fast:
 	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 .PHONY : MathFunctions/fast
 
+#=============================================================================
+# Target rules for targets named OpAdd
+
+# Build rule for target.
+OpAdd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OpAdd
+.PHONY : OpAdd
+
+# fast build rule for target.
+OpAdd/fast:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build.make MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build
+.PHONY : OpAdd/fast
+
+#=============================================================================
+# Target rules for targets named OpMul
+
+# Build rule for target.
+OpMul: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OpMul
+.PHONY : OpMul
+
+# fast build rule for target.
+OpMul/fast:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build.make MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build
+.PHONY : OpMul/fast
+
+#=============================================================================
+# Target rules for targets named OpSub
+
+# Build rule for target.
+OpSub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OpSub
+.PHONY : OpSub
+
+# fast build rule for target.
+OpSub/fast:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build.make MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build
+.PHONY : OpSub/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -151,6 +190,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MathFunctions"
+	@echo "... OpAdd"
+	@echo "... OpMul"
+	@echo "... OpSub"
 	@echo "... Tutorial"
 .PHONY : help
 

@@ -88,9 +88,15 @@ MathFunctions_OBJECTS = \
 "CMakeFiles/MathFunctions.dir/MathFunctions.cxx.o"
 
 # External object files for target MathFunctions
-MathFunctions_EXTERNAL_OBJECTS =
+MathFunctions_EXTERNAL_OBJECTS = \
+"/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/OpAdd.cxx.o" \
+"/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/OpMul.cxx.o" \
+"/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/OpSub.cxx.o"
 
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/MathFunctions.cxx.o
+MathFunctions/libMathFunctions.a: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/OpAdd.cxx.o
+MathFunctions/libMathFunctions.a: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/OpMul.cxx.o
+MathFunctions/libMathFunctions.a: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/OpSub.cxx.o
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/build.make
 MathFunctions/libMathFunctions.a: MathFunctions/CMakeFiles/MathFunctions.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMathFunctions.a"

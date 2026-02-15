@@ -83,16 +83,85 @@ clean: MathFunctions/clean
 # Recursive "all" directory target.
 MathFunctions/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
 MathFunctions/all: MathFunctions/MathLogger/all
+MathFunctions/all: MathFunctions/MathExtensions/all
 .PHONY : MathFunctions/all
 
 # Recursive "preinstall" directory target.
 MathFunctions/preinstall: MathFunctions/MathLogger/preinstall
+MathFunctions/preinstall: MathFunctions/MathExtensions/preinstall
 .PHONY : MathFunctions/preinstall
 
 # Recursive "clean" directory target.
 MathFunctions/clean: MathFunctions/CMakeFiles/MathFunctions.dir/clean
 MathFunctions/clean: MathFunctions/MathLogger/clean
+MathFunctions/clean: MathFunctions/MathExtensions/clean
 .PHONY : MathFunctions/clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions/MathExtensions
+
+# Recursive "all" directory target.
+MathFunctions/MathExtensions/all: MathFunctions/MathExtensions/OpAdd/all
+MathFunctions/MathExtensions/all: MathFunctions/MathExtensions/OpMul/all
+MathFunctions/MathExtensions/all: MathFunctions/MathExtensions/OpSub/all
+.PHONY : MathFunctions/MathExtensions/all
+
+# Recursive "preinstall" directory target.
+MathFunctions/MathExtensions/preinstall: MathFunctions/MathExtensions/OpAdd/preinstall
+MathFunctions/MathExtensions/preinstall: MathFunctions/MathExtensions/OpMul/preinstall
+MathFunctions/MathExtensions/preinstall: MathFunctions/MathExtensions/OpSub/preinstall
+.PHONY : MathFunctions/MathExtensions/preinstall
+
+# Recursive "clean" directory target.
+MathFunctions/MathExtensions/clean: MathFunctions/MathExtensions/OpAdd/clean
+MathFunctions/MathExtensions/clean: MathFunctions/MathExtensions/OpMul/clean
+MathFunctions/MathExtensions/clean: MathFunctions/MathExtensions/OpSub/clean
+.PHONY : MathFunctions/MathExtensions/clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions/MathExtensions/OpAdd
+
+# Recursive "all" directory target.
+MathFunctions/MathExtensions/OpAdd/all: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all
+.PHONY : MathFunctions/MathExtensions/OpAdd/all
+
+# Recursive "preinstall" directory target.
+MathFunctions/MathExtensions/OpAdd/preinstall:
+.PHONY : MathFunctions/MathExtensions/OpAdd/preinstall
+
+# Recursive "clean" directory target.
+MathFunctions/MathExtensions/OpAdd/clean: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpAdd/clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions/MathExtensions/OpMul
+
+# Recursive "all" directory target.
+MathFunctions/MathExtensions/OpMul/all: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all
+.PHONY : MathFunctions/MathExtensions/OpMul/all
+
+# Recursive "preinstall" directory target.
+MathFunctions/MathExtensions/OpMul/preinstall:
+.PHONY : MathFunctions/MathExtensions/OpMul/preinstall
+
+# Recursive "clean" directory target.
+MathFunctions/MathExtensions/OpMul/clean: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpMul/clean
+
+#=============================================================================
+# Directory level rules for directory MathFunctions/MathExtensions/OpSub
+
+# Recursive "all" directory target.
+MathFunctions/MathExtensions/OpSub/all: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all
+.PHONY : MathFunctions/MathExtensions/OpSub/all
+
+# Recursive "preinstall" directory target.
+MathFunctions/MathExtensions/OpSub/preinstall:
+.PHONY : MathFunctions/MathExtensions/OpSub/preinstall
+
+# Recursive "clean" directory target.
+MathFunctions/MathExtensions/OpSub/clean: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpSub/clean
 
 #=============================================================================
 # Directory level rules for directory MathFunctions/MathLogger
@@ -129,14 +198,17 @@ Tutorial/clean: Tutorial/CMakeFiles/Tutorial.dir/clean
 
 # All Build rule for target.
 Tutorial/CMakeFiles/Tutorial.dir/all: MathFunctions/CMakeFiles/MathFunctions.dir/all
+Tutorial/CMakeFiles/Tutorial.dir/all: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all
+Tutorial/CMakeFiles/Tutorial.dir/all: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all
+Tutorial/CMakeFiles/Tutorial.dir/all: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all
 	$(MAKE) $(MAKESILENT) -f Tutorial/CMakeFiles/Tutorial.dir/build.make Tutorial/CMakeFiles/Tutorial.dir/depend
 	$(MAKE) $(MAKESILENT) -f Tutorial/CMakeFiles/Tutorial.dir/build.make Tutorial/CMakeFiles/Tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=3,4 "Built target Tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=6,7 "Built target Tutorial"
 .PHONY : Tutorial/CMakeFiles/Tutorial.dir/all
 
 # Build rule for subdir invocation for target.
 Tutorial/CMakeFiles/Tutorial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tutorial/CMakeFiles/Tutorial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 0
 .PHONY : Tutorial/CMakeFiles/Tutorial.dir/rule
@@ -154,7 +226,9 @@ Tutorial/CMakeFiles/Tutorial.dir/clean:
 # Target rules for target MathFunctions/CMakeFiles/MathFunctions.dir
 
 # All Build rule for target.
-MathFunctions/CMakeFiles/MathFunctions.dir/all:
+MathFunctions/CMakeFiles/MathFunctions.dir/all: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all
+MathFunctions/CMakeFiles/MathFunctions.dir/all: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all
+MathFunctions/CMakeFiles/MathFunctions.dir/all: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all
 	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/depend
 	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=1,2 "Built target MathFunctions"
@@ -162,7 +236,7 @@ MathFunctions/CMakeFiles/MathFunctions.dir/all:
 
 # Build rule for subdir invocation for target.
 MathFunctions/CMakeFiles/MathFunctions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/CMakeFiles/MathFunctions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 0
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/rule
@@ -175,6 +249,84 @@ MathFunctions: MathFunctions/CMakeFiles/MathFunctions.dir/rule
 MathFunctions/CMakeFiles/MathFunctions.dir/clean:
 	$(MAKE) $(MAKESILENT) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/clean
 .PHONY : MathFunctions/CMakeFiles/MathFunctions.dir/clean
+
+#=============================================================================
+# Target rules for target MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir
+
+# All Build rule for target.
+MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build.make MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/depend
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build.make MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=3 "Built target OpAdd"
+.PHONY : MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all
+
+# Build rule for subdir invocation for target.
+MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 0
+.PHONY : MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/rule
+
+# Convenience name for target.
+OpAdd: MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/rule
+.PHONY : OpAdd
+
+# clean rule for target.
+MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/build.make MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/clean
+
+#=============================================================================
+# Target rules for target MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir
+
+# All Build rule for target.
+MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build.make MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/depend
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build.make MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=4 "Built target OpMul"
+.PHONY : MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all
+
+# Build rule for subdir invocation for target.
+MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 0
+.PHONY : MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/rule
+
+# Convenience name for target.
+OpMul: MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/rule
+.PHONY : OpMul
+
+# clean rule for target.
+MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/build.make MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/clean
+
+#=============================================================================
+# Target rules for target MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir
+
+# All Build rule for target.
+MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build.make MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/depend
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build.make MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/enzoc/CMake_Exercises/Step5/build/CMakeFiles --progress-num=5 "Built target OpSub"
+.PHONY : MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all
+
+# Build rule for subdir invocation for target.
+MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/enzoc/CMake_Exercises/Step5/build/CMakeFiles 0
+.PHONY : MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/rule
+
+# Convenience name for target.
+OpSub: MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/rule
+.PHONY : OpSub
+
+# clean rule for target.
+MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/clean:
+	$(MAKE) $(MAKESILENT) -f MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/build.make MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/clean
+.PHONY : MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

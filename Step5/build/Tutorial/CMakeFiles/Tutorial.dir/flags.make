@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/enzoc/CMake_Exercises/Step5/MathFunctions
+CXX_INCLUDES = -I/home/enzoc/CMake_Exercises/Step5/MathFunctions -I/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpAdd -I/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpMul -I/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpSub
 
 CXX_FLAGS = -std=gnu++20 -Wall
 

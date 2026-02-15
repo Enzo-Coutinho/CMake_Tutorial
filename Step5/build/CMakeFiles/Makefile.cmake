@@ -9,6 +9,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/enzoc/CMake_Exercises/Step5/CMakeLists.txt"
   "/home/enzoc/CMake_Exercises/Step5/MathFunctions/CMakeLists.txt"
+  "/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/CMakeLists.txt"
+  "/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpAdd/CMakeLists.txt"
+  "/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpMul/CMakeLists.txt"
+  "/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathExtensions/OpSub/CMakeLists.txt"
   "/home/enzoc/CMake_Exercises/Step5/MathFunctions/MathLogger/CMakeLists.txt"
   "/home/enzoc/CMake_Exercises/Step5/Tutorial/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
@@ -46,10 +50,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Tutorial/CMakeFiles/CMakeDirectoryInformation.cmake"
   "MathFunctions/CMakeFiles/CMakeDirectoryInformation.cmake"
   "MathFunctions/MathLogger/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/MathExtensions/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/MathExtensions/OpAdd/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/MathExtensions/OpMul/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/MathExtensions/OpSub/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "Tutorial/CMakeFiles/Tutorial.dir/DependInfo.cmake"
   "MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
+  "MathFunctions/MathExtensions/OpAdd/CMakeFiles/OpAdd.dir/DependInfo.cmake"
+  "MathFunctions/MathExtensions/OpMul/CMakeFiles/OpMul.dir/DependInfo.cmake"
+  "MathFunctions/MathExtensions/OpSub/CMakeFiles/OpSub.dir/DependInfo.cmake"
   )

@@ -47,3 +47,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathLogger/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/enzoc/CMake_Exercises/Step5/build/MathFunctions/MathExtensions/cmake_install.cmake")
+endif()
+
